@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(110, 127, 240);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 20px;
+}
+.card_container_content {
+    height: auto;
+}
+.card_container {
+    height: auto;
+    padding: 5px;
+    width: 200px;
+    background-color: rgb(228, 228, 226);
+    border-radius: 15px;
+   
+}
+.card_container_title {
+    text-align: center;
+    font-size: 16px;
+}
+.card_container_add {
+    height: 25px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(160, 160, 159);
+    text-decoration: underline;
+}
+.card, .create_card {
+    width: 190px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.create_card_input:focus {
+    outline: none;
+}
+.create_card_input {
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.card_delete {
+    border-radius: 15px;
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+.card:hover .card_delete {
+    display: block;
+}
+
+
+.grabbable {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    opacity: 0.5;
+}
