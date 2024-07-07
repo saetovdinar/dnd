@@ -10,7 +10,10 @@ export default class Todo {
         this.dndListener();
         this.addCardCancelListener();
         window.addEventListener('unload', this.saveInLocalStorage);
-        window.addEventListener('load',this.loadLocalStorage);
+        if(localStorage.getItem('container')) {
+            window.addEventListener('load',this.loadLocalStorage);
+        }
+       
     }
     renderColumns() {
         this.container.innerHTML += new CardView().renderCardContainerHTML('TODO');
